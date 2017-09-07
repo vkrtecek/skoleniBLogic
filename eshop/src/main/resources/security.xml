@@ -12,6 +12,8 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
 	<http>
 		<csrf disabled="true" />
 		<form-login />
+		<logout/>
+		<remember-me/>
 		<intercept-url pattern="/**" access="hasRole('ROLE_USER')" />
 	</http>
 	<authentication-manager>

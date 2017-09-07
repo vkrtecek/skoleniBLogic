@@ -1,0 +1,5 @@
+﻿thread safe thing as bean
+JVisualVM pro monitorování statistik aplikace (URL, CPU, MEM)
+Nexus as a local repository for libraries
+in try () only autoclosable Interfaces
+primefaces - angularové komponenty - jen pseudoXML, žádný AJAX

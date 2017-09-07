@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns="http://www.w3.org/1999/xhtml">
+<body>
+	<h1>Thymeleaf works fine</h1>
+	<table rules="all">
+		<thead>
+			<tr>
+				<th>id</th>
+				<th>name</th>
+				<th>price</th>
+				<th>description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="item:${items}">
+				<td th:text="${item.ID}"></td>
+				<td th:text="${item.name}"></td>
+				<td th:text="${item.price}"></td>
+				<td th:text="${item.description}"></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<br />
+	<br />
+	<p>
+		Actual date is <span th:text="${@indexController.currentDate}"></span>
+	</p>
+
+	<p th:utext="${@indexController.textWithHtml}"></p>
+
+	<script th:inline="javascript">
+			var currentDate = /*[[${@indexController.currentDate}]]*/ null;
+			alert( currentDate );
+	</script>
+</body>
+</html>

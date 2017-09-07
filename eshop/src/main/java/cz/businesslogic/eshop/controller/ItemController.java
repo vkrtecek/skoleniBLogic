@@ -24,8 +24,10 @@ import org.springframework.web.bind.annotation.RestController;
 import cz.businesslogic.eshop.dto.ItemDTO;
 import cz.businesslogic.eshop.exception.BadRequestException;
 import cz.businesslogic.eshop.service.ItemService;
+import io.swagger.annotations.Api;
 import lombok.extern.slf4j.Slf4j;
 
+@Api
 @Slf4j
 @RestController
 @RequestMapping("/item")

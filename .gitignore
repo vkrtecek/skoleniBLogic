@@ -1,1 +1,7 @@
 *.jar
+.*
+/HelloWorld
+/Remote*
+/Servers
+/spring*
+/skoleni-spring/spring-tool*
